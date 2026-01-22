@@ -636,4 +636,34 @@ body {
 
 }
 
+/* =========================
+   HERO – PREMIUM MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  .hero {
+    height: 100vh;
+    padding-top: 140px;   /* 로고 위 여백 */
+    padding-bottom: 80px;
+    align-items: flex-start;
+  }
+
+  .hero h1 {
+    margin-bottom: 40px; /* 로고 아래 여백 */
+  }
+
+  .hero-vision {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #ddd;
+    max-width: 90%;
+    margin-bottom: 60px; /* 이미지랑 간격 */
+  }
+
+}
+@media (max-width: 768px) {
+  .section:first-of-type {
+    margin-top: -40px;
+  }
+}
 
