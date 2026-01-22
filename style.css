@@ -786,4 +786,24 @@ body {
 
 
 }
+@media (max-width: 768px) {
+
+  .hero {
+    height: auto !important;
+    min-height: 100vh;
+    display: block !important;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    overflow: visible;
+  }
+
+  .hero h1 {
+    margin-bottom: 64px;
+  }
+
+  section.section:first-of-type {
+    margin-top: -120px;
+    overflow: visible;
+  }
+}
 
