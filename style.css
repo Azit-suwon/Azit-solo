@@ -536,4 +536,60 @@ body {
     border-radius: 16px;
   }
 }
+/* =========================
+   BRAND POLISH – FINAL FIX
+========================= */
+
+/* ---------
+   MOBILE
+--------- */
+@media (max-width: 768px) {
+
+  /* 로고 + Our Vision 여백 */
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+
+  .hero-logo {
+    margin-bottom: 64px;
+  }
+
+  .brand-desc {
+    margin-top: 48px;
+  }
+}
+
+/* ---------
+   DESKTOP
+--------- */
+@media (min-width: 769px) {
+
+  /* Hero 영역 복구 */
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Our Vision 잘림 제거 */
+  .brand-desc {
+    max-height: none;
+    overflow: visible;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  /* 섹션 1 가로 구조 복구 */
+  .section .split {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .section .split img {
+    order: 0;
+    margin-bottom: 0;
+  }
+}
+
 
