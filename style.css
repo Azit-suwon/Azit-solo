@@ -666,4 +666,42 @@ body {
     margin-top: -40px;
   }
 }
+/* =========================
+   MOBILE HERO REFINEMENT
+   명품 브랜드 느낌
+========================= */
+@media (max-width: 768px) {
+
+  /* HERO 전체 구조 */
+  .hero {
+    height: 100vh;
+    align-items: flex-start;      /* 중앙 정렬 제거 */
+    padding-top: 96px;            /* AZIT 위 여백 */
+    padding-bottom: 120px;        /* 아래 여유 (사진 보이게) */
+  }
+
+  /* AZIT 로고 */
+  .hero h1 {
+    margin-bottom: 48px;          /* 로고 ↔ Our Vision 여백 */
+  }
+
+  /* Our Vision 블록 */
+  .brand-desc {
+    margin-top: 0;
+    max-height: none;
+    overflow: visible;
+  }
+
+  /* Our Vision 텍스트 */
+  .brand-desc p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* 첫 번째 섹션 이미지가 살짝 보이게 */
+  section.section:first-of-type {
+    margin-top: -80px;
+  }
+
+}
 
