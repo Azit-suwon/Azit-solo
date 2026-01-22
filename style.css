@@ -489,3 +489,51 @@ body {
     max-height: 160px;
   }
 }
+/* =========================
+   MOBILE FIX – OUR VISION
+========================= */
+@media (max-width: 768px) {
+
+  /* HERO 구조를 일반 섹션처럼 */
+  .hero {
+    height: auto;
+    padding: 80px 0 40px;
+    display: block;
+  }
+
+  /* Our Vision 컨테이너 */
+  .brand-desc {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    padding: 0 20px;
+    margin-top: 24px;
+  }
+
+  /* 잘림/그라데이션 제거 */
+  .brand-desc::after {
+    display: none;
+  }
+
+  /* Our Vision 텍스트 전부 표시 */
+  .brand-desc p {
+    display: block !important;
+    font-size: 14px;
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+
+  /* SECTION 1에서 이미지가 항상 먼저 */
+  .section .split {
+    flex-direction: column;
+  }
+
+  /* SECTION 1 이미지 */
+  .section .split img {
+    order: -1;              /* 무조건 텍스트 위 */
+    width: 100%;
+    margin-bottom: 24px;
+    border-radius: 16px;
+  }
+}
+
