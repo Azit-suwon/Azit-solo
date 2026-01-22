@@ -828,3 +828,15 @@ body {
 
 }
 
+/* ===== 사진 안 보이던 진짜 원인 해결 ===== */
+@media (max-width: 768px) {
+
+  .hero {
+    overflow: visible !important;
+  }
+
+  .section {
+    overflow: visible !important;
+  }
+
+}
