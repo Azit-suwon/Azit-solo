@@ -807,3 +807,24 @@ body {
   }
 }
 
+/* ===== 첫 화면 사진 일부 노출 (모바일 전용) ===== */
+@media (max-width: 768px) {
+
+  .hero {
+    padding-bottom: 140px; /* 로고 + Our Vision 아래 여백 */
+  }
+
+  .section-1 {
+    position: relative;
+    z-index: 2;
+  }
+
+  .peek-image {
+    width: 100%;
+    display: block;
+    margin-top: -160px; /* 👈 이 값이 사진 보이는 핵심 */
+    z-index: 1;
+  }
+
+}
+
