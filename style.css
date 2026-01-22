@@ -436,3 +436,21 @@ body {
     color: #ccc;
   }
 }
+@media (max-width: 768px) {
+
+  .brand-desc {
+    max-width: 100%;
+    margin-top: 24px;
+  }
+
+  .brand-desc p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* 첫 문단만 강조하고 나머지는 숨김 */
+  .brand-desc p:not(:first-of-type) {
+    display: none;
+  }
+
+}
