@@ -591,5 +591,49 @@ body {
     margin-bottom: 0;
   }
 }
+/* ===============================
+   MOBILE BRAND SPACING – AZIT
+   =============================== */
+@media (max-width: 768px) {
+
+  /* 전체 첫 화면 숨 쉴 공간 */
+  body {
+    line-height: 1.6;
+  }
+
+  /* 로고 섹션 */
+  .logo,
+  .hero-logo,
+  header {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  /* Our Vision 섹션 전체 */
+  .our-vision,
+  #our-vision,
+  section.vision {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  /* Our Vision 제목 */
+  .our-vision h2,
+  #our-vision h2 {
+    margin-bottom: 32px;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+  }
+
+  /* Our Vision 본문 */
+  .our-vision p,
+  #our-vision p {
+    margin-top: 24px;
+    font-size: 14.5px;
+    line-height: 1.75;
+    opacity: 0.9;
+  }
+
+}
 
 
