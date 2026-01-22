@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo";
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.hero h1 {
+  font-size: 64px;
+  letter-spacing: 6px;
+  font-weight: 500;
+}
+
+
+/* SECTION */
+.section {
+  padding: 120px 8%;
+}
+
+.section.dark {
+  background: #151515;
+}
+
+.split {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.split.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #ddd;
+}
+
+.split img {
+  width: 38%;
+  border-radius: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.sub {
+  margin-top: 20px;
+  color: #aaa;
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 32px;
+  border-radius: 30px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn.big {
+  font-size: 18px;
+  padding: 18px 44px;
+}
+
+.recommend {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 2;
+  color: #ddd;
+}
+
+.dm-images {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dm-images img {
+  width: 240px;
+  border-radius: 16px;
+}
+
+.last-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* SCROLL ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .hero h1 {
+    font-size: 56px;
+    letter-spacing: 4px;
+  }
+
+  .section {
+    padding: 70px 20px;
+  }
+
+  .split,
+  .split.reverse {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .split img {
+    width: 100%;
+  }
+
+  .text h2 {
+    font-size: 24px;
+  }
+
+  .text p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .dm-images img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .last-title {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+}
+.timeline-title {
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+.timeline-simple {
+  max-width: 520px;
+}
+
+.step {
+  margin-bottom: 48px;
+}
+
+.step span {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.step p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #ddd;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding-left: 24px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+  }
+}
+/* =========================
+   MOBILE FINAL – AZIT
+   게더링하우스 스타일
+========================= */
+@media (max-width: 768px) {
+
+  /* 전체 기본 리듬 */
+  body {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  /* HERO */
+  .hero {
+    height: 90vh;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+    letter-spacing: 2px;
+  }
+
+  /* SECTION 간격 */
+  .section {
+    padding: 70px 20px;
+  }
+
+  /* 좌우 구조 → 위아래 */
+  .split,
+  .split.reverse {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* 이미지 */
+  .split img {
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  /* 텍스트 */
+  .text {
+    width: 100%;
+  }
+
+  .text h2 {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+
+  .text p {
+    font-size: 16px;
+    line-height: 1.85;
+    color: #ddd;
+  }
+
+  /* 버튼 – 모바일 핵심 */
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 16px;
+    border-radius: 999px;
+  }
+
+  .btn.big {
+    font-size: 17px;
+    padding: 18px 0;
+  }
+
+  /* 추천 문구 */
+  .recommend {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  /* 타임라인 */
+  .timeline-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .timeline-simple {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .step span {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #fff;
+  }
+
+  .step p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #ccc;
+  }
+
+  /* DM 후기 */
+  .dm-images {
+    gap: 16px;
+  }
+
+  .dm-images img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 14px;
+  }
+
+  /* 마지막 문구 */
+  .last-title {
+    font-size: 26px;
+    line-height: 1.5;
+  }
+
+}
+/* =========================
+   FLOATING APPLY BUTTON
+========================= */
+@media (max-width: 768px) {
+
+  .floating-apply {
+    position: fixed;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 420px;
+
+    background: #ffffff;
+    color: #000;
+    text-align: center;
+    padding: 16px 0;
+    border-radius: 999px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+
+    z-index: 9999;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  }
+
+}
+.brand-desc {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  max-width: 420px;
+}
+
+.brand-desc p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #aaa;
+  letter-spacing: 0.2px;
+}
+
+/* 모바일에서는 아래로 내려가게 */
+@media (max-width: 768px) {
+  .brand-desc {
+    position: static;
+    margin-top: 40px;
+    padding: 0 20px;
+    max-width: 100%;
+  }
+
+  .brand-desc p {
+    font-size: 14px;
+    color: #ccc;
+  }
+}
+/* ===== Brand Vision Section ===== */
+
+.hero {
+  position: relative;
+}
+
+.brand-desc {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-10%);
+  max-width: 420px;
+}
+
+.vision-title {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.brand-desc p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #aaa;
+  margin-bottom: 16px;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .brand-desc {
+    position: static;
+    transform: none;
+    margin-top: 40px;
+    padding: 0 20px;
+    max-width: 100%;
+  }
+
+  .brand-desc p {
+    font-size: 14px;
+    color: #ccc;
+  }
+}
