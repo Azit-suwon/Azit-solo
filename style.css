@@ -704,4 +704,38 @@ body {
   }
 
 }
+/* =========================
+   MOBILE HERO FIX (FINAL)
+========================= */
+@media (max-width: 768px) {
+
+  /* HERO를 위에서부터 쌓이게 */
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    align-items: flex-start;
+    padding-top: 96px;
+    padding-bottom: 80px;
+  }
+
+  /* 🔥 핵심: Our Vision 위치 정상화 */
+  .brand-desc {
+    position: static;      /* absolute 제거 */
+    transform: none;
+    margin-top: 56px;      /* AZIT ↔ Our Vision 여백 */
+    max-width: 100%;
+  }
+
+  /* Our Vision 텍스트 */
+  .brand-desc p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* 첫 섹션 사진이 살짝 보이게 */
+  section.section:first-of-type {
+    margin-top: -60px;
+  }
+
+}
 
